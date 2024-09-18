@@ -1,0 +1,83 @@
+body {
+    background-size: cover;
+    font-family: 'SpongeBob Font Condensed', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 70px;
+    color: #dfdc5b;
+    margin: 30px auto 5px auto;
+}
+
+.memory-game {
+    height: 650px;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+}
+
+.memory-card {
+    width: 160px;
+    height: 200px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    border: 2px solid  rgb(57, 83, 44);
+    border-radius: 25px;
+}
+
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.front-face, .back-face {
+    width: 160px;
+    height: 200px;
+    border-radius: 25px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    justify-content: center;
+    font-family: 'SpongeBob Font Condensed', sans-serif;
+    align-items: center;
+    font-size: 16px;
+    width: 110px;
+    height: 50px;
+    background-color: rgb(187, 236, 233);
+    box-shadow: 3px 3px 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+button:hover {
+    background-color: #dfdc5b;
+}
