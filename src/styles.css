@@ -1,5 +1,5 @@
 body {
-    background-size: cover;
+    background-size: contain;
     font-family: 'SpongeBob Font Condensed', sans-serif;
 }
 
@@ -9,6 +9,7 @@ h1 {
     font-size: 70px;
     color: #dfdc5b;
     margin: 30px auto 5px auto;
+    text-shadow: 0 0 2px black, 0 0 5px black;
 }
 
 .memory-game {
@@ -30,7 +31,7 @@ h1 {
     transform-style: preserve-3d;
     transition: transform .5s;
     border: 2px solid  rgb(57, 83, 44);
-    border-radius: 25px;
+    border-radius: 05px;
 }
 
 .memory-card:active {
@@ -45,7 +46,7 @@ h1 {
 .front-face, .back-face {
     width: 160px;
     height: 200px;
-    border-radius: 25px;
+    border-radius: 20px;
     position: absolute;
     backface-visibility: hidden;
 }
