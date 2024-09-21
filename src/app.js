@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let hasFlippedCard = false
     let lockBoard = false
-    let firstCard, secondCard
+    let firstCard, secondCard, matchCounter
 
 
     function flipCard() {
@@ -34,7 +34,17 @@ document.addEventListener('DOMContentLoaded', () => {
         // unflipCards()
 
         let isMatch = firstCard.dataset.framework === secondCard.dataset.framework
-        isMatch ? disableCards() : unflipCards()
+        
+        if (isMatch) {
+            matchCounter+=1
+            disableCards()
+            if (matchCounter == (cards.length/2)) {
+                alert("Congratulations, you did it!")
+            }
+        }
+        else {
+            unflipCards()
+        }
     }
 
     function disableCards() {
