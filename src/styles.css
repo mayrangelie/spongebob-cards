@@ -43,7 +43,7 @@ h1 {
     transform-style: preserve-3d;
     transition: transform .5s;
     border: 2px solid  rgb(57, 83, 44);
-    border-radius: 29px;
+    border-radius: 20px;
 }
 
 .memory-card:active {
