@@ -23,6 +23,18 @@ h1 {
     margin: 0 auto 0 auto;
 }
 
+@media screen and (max-width: 1024px) {
+    .memory-game {
+        width: auto;
+        height: auto;
+    }
+    
+    .actions {
+        margin-top: auto;
+        padding-top: 30px;
+    }
+}
+
 .memory-card {
     width: 160px;
     height: 200px;
